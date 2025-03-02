@@ -1,11 +1,9 @@
 package com.aziz.model;
 
 import com.aziz.domain.USER_ROLE;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -28,9 +26,15 @@ public class User {
 
     private USER_ROLE role = USER_ROLE.ROLE_CUSTOMER;
 
+    // One-to-Many with Address: A user can have multiple addresses
+    @OneToMany
     // address will be saved in db
     private Set<Address> addresses = new HashSet<>();
 
+    // Many-to-Many with Coupon: Users can use multiple coupons, and a coupon can be used by multiple users
+    @ManyToMany
+    // we don't need coupons in frontend, data needed only backend to check if coupon is valid or not
+    @JsonIgnore
     // each user can use a coupon only one time
     private Set<Coupon> usedCoupons = new HashSet<>();
 
