@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9feff324-ab80-4b37-91e7-4396e2b4acc1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aziz/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aziz/response/ApiResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +34,9 @@
   "associatedIndex": 2
 }]]></component>
   <component name="ProjectId" id="2tlgH2sdrRyoa9jcCQKIKkE329h" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -82,7 +82,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1740931983862</updated>
-      <workItem from="1740931984929" duration="845000" />
+      <workItem from="1740931984929" duration="1577000" />
     </task>
     <servers />
   </component>
