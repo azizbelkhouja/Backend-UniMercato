@@ -1,10 +1,11 @@
 package com.aziz.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
+
+import java.time.LocalDate;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Getter
@@ -17,6 +18,25 @@ public class Coupon {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO) // generate Id automatically ( no id from frontend when new user created )
     private Long id;
+
+    private String code;
+
+    private double discountPercentage;
+
+    private LocalDate validityStartDate;
+
+    private LocalDate validityEndDate;
+
+    private double minimumOrderValue;
+
+    private boolean isActive = true;
+
+    @ManyToMany(mappedBy = "usedCoupons")
+    private Set<User> usedByUsers = new HashSet<>();
+
+
+
+
 
 
 }
