@@ -1,7 +1,9 @@
-package com.aziz.model;
+package com.aziz.modal;
 
 import jakarta.persistence.*;
 import lombok.*;
+
+import java.time.LocalDateTime;
 
 @Entity
 @Getter
@@ -9,19 +11,21 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode
-public class VerificationCode {
+public class Transaction {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private String otp;
-
-    private String email;
-
-    @OneToOne
-    private User user;
+    @ManyToOne
+    private User customer;
 
     @OneToOne
+    private Order order;
+
+    @ManyToOne
     private Seller seller;
+
+    //when transaction is created
+    private LocalDateTime date = LocalDateTime.now();
 }

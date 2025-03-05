@@ -1,4 +1,4 @@
-package com.aziz.model;
+package com.aziz.modal;
 
 import com.aziz.domain.PaymentMethod;
 import com.aziz.domain.PaymentOrderStatus;

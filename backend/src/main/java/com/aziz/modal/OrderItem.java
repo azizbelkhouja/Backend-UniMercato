@@ -1,4 +1,4 @@
-package com.aziz.model;
+package com.aziz.modal;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;

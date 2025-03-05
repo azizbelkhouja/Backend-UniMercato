@@ -1,4 +1,4 @@
-package com.aziz.model;
+package com.aziz.modal;
 
 import com.aziz.domain.USER_ROLE;
 import com.fasterxml.jackson.annotation.JsonIgnore;
