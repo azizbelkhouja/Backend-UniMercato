@@ -1,0 +1,9 @@
+package com.aziz.domain;
+
+public enum PaymentStatus {
+
+    PENDING,
+    PROCESSING,
+    COMPLETED,
+    FAILED
+}
