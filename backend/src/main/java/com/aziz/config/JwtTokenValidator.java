@@ -1,4 +1,7 @@
 package com.aziz.config;
 
-public class JwtTokenValidator {
+import jakarta.servlet.Filter;
+import org.springframework.web.filter.OncePerRequestFilter;
+
+public class JwtTokenValidator extends OncePerRequestFilter {
 }
