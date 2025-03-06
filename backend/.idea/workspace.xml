@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9feff324-ab80-4b37-91e7-4396e2b4acc1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/aziz/config/JwtTokenValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aziz/config/JwtTokenValidator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +98,7 @@
       <workItem from="1741008872683" duration="3741000" />
       <workItem from="1741188204382" duration="4719000" />
       <workItem from="1741256569494" duration="6553000" />
-      <workItem from="1741270024914" duration="4003000" />
+      <workItem from="1741270024914" duration="4346000" />
     </task>
     <servers />
   </component>
